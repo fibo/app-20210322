@@ -1,0 +1,13 @@
+.drag-me {
+  margin: 50px;
+  height: 200px;
+  width: 200px;
+  background-color: blueviolet;
+}
+
+.drop-here {
+  margin: 50px;
+  height: 200px;
+  width: 200px;
+  background-color: gold;
+}
