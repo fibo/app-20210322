@@ -1,11 +1,10 @@
 import { useDrag } from 'react-dnd'
 
-const itemTypes = {
-  BOX: 'box'
-}
+export const draggableType = 'BOX'
+
 export function DraggableBox({ dropped, setDropped = () => {} }) {
   const [, /*collectedProps*/ dragSourceRef] = useDrag({
-    type: itemTypes.BOX,
+    type: draggableType,
     end: (item, monitor) => {
       const dropResult = monitor.getDropResult()
 
